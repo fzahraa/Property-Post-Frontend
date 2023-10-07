@@ -1,0 +1,151 @@
+@import "/src/assets/styles/global.scss";
+.menu-item {
+  ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    li {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      padding: 20px 40px;
+      cursor: pointer;
+      position: relative;
+      span {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      p {
+        @include MontserratRegular;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 20px;
+
+        color: $color-black;
+      }
+    }
+  }
+}
+.active {
+  ul {
+    li {
+      background: $color-primary;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      padding: 20px 40px;
+      cursor: pointer;
+      position: relative;
+      span {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      p {
+        @include MontserratRegular;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 20px;
+        color: $color-white-2;
+      }
+    }
+  }
+}
+.down-arrow {
+  position: absolute;
+  right: 40px;
+}
+
+.dropdown {
+  width: 100%;
+  &_lists {
+    display: flex;
+    flex-direction: column;
+    &_list {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      padding: 20px 40px;
+      cursor: pointer;
+      position: relative;
+      p {
+        @include MontserratRegular;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 20px;
+        color: $color-black;
+      }
+    }
+  }
+}
+.active-dropdown {
+  background: $color-primary;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 20px 40px;
+  cursor: pointer;
+  position: relative;
+  span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  p {
+    @include MontserratRegular;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: $color-white-2;
+  }
+}
+@media (max-width: 48em) {
+  .menu-item {
+    ul {
+      li {
+        padding: 20px 10px;
+        gap: 8px;
+        p {
+          font-size: 14px;
+          line-height: 14px;
+        }
+      }
+    }
+  }
+  .active {
+    ul {
+      li {
+        padding: 20px;
+        gap: 8px;
+
+        p {
+          font-size: 14px;
+          line-height: 14px;
+        }
+      }
+    }
+  }
+  .dropdown {
+    &_lists {
+      &_list {
+        padding: 20px;
+        p {
+          font-size: 14px;
+          line-height: 14px;
+        }
+      }
+    }
+  }
+  .active-dropdown {
+    padding: 20px;
+    p {
+      font-size: 14px;
+      line-height: 14px;
+    }
+  }
+}

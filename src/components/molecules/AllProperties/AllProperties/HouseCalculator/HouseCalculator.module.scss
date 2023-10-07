@@ -1,0 +1,76 @@
+@import "/src/assets/styles//global.scss";
+.calculator {
+  margin: 0 auto;
+  width: 100%;
+  padding: 0 20px;
+  max-width: 1440px;
+  padding-top: 40px;
+  padding-bottom: 26px;
+  h1 {
+    @include MontserratRegular;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 40px;
+    color: $color-black;
+    text-align: center;
+  }
+  &_input {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 900px;
+    display: flex;
+    align-items: center;
+    gap: 80px;
+    margin-top: 50px;
+  }
+  &_dropdown {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 900px;
+    display: flex;
+    align-items: center;
+    gap: 80px;
+    margin-top: 56px;
+    &_size-of-move {
+      width: 100%;
+      position: relative;
+    }
+    &_packing {
+      width: 100%;
+      position: relative;
+    }
+  }
+  &_button {
+    margin: 0 auto;
+    width: fit-content;
+    margin-top: 70px;
+  }
+}
+
+@media (max-width: 37em) {
+  .calculator {
+    &_input {
+      gap: 20px;
+    }
+    &_dropdown {
+      gap: 20px;
+    }
+  }
+}
+@media (max-width: 30em) {
+  .calculator {
+    &_input {
+      flex-direction: column;
+      gap: 30px;
+    }
+    &_dropdown {
+      flex-direction: column;
+      margin-top: 20px;
+      gap: 30px;
+    }
+    &_button {
+      margin-top: 30px;
+    }
+  }
+}

@@ -1,0 +1,196 @@
+@import "/src/assets/styles/global.scss";
+.buisness-payment {
+  background: $color-white;
+  box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+  width: 100%;
+  &_heading {
+    padding: 16px 32px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+
+    h1 {
+      @include MontserratRegular;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 28px;
+      line-height: 30px;
+      color: $color-black;
+    }
+    &_fillter {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: fit-content;
+      gap: 12px;
+      h4 {
+        @include MontserratRegular;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 20px;
+        color: $color-black;
+      }
+    }
+  }
+  &_table {
+    width: 100%;
+    &_heading {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 36px;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.23);
+      p {
+        @include MontserratRegular;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 20px;
+
+        color: $color-black;
+      }
+      &_title {
+        width: 100%;
+        max-width: 240px;
+        text-align: left;
+      }
+      &_status {
+        width: 100%;
+        max-width: 220px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      &_payment {
+        width: 100%;
+        max-width: 200px;
+      }
+      &_amount {
+        max-width: 150px;
+
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+    &_detail {
+      display: flex;
+      align-items: center;
+
+      justify-content: space-between;
+      padding: 22px 20px;
+      margin: 0 16px;
+      border-bottom: 1px solid #e2e2ee;
+      span {
+        @include MontserratRegular;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 23px;
+        color: rgba(0, 0, 0, 0.6);
+      }
+      &_title {
+        width: 100%;
+        max-width: 240px;
+        text-align: left;
+      }
+      &_status {
+        width: 100%;
+        max-width: 220px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        p {
+          @include MontserratRegular;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 20px;
+        }
+      }
+      &_payment {
+        width: 100%;
+        max-width: 200px;
+        text-align: center;
+      }
+      &_amount {
+        width: 100%;
+        max-width: 150px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+  }
+}
+.status-detail-Posted {
+  color: $color-sucess;
+}
+.status-detail-Pending {
+  color: $color-yellow;
+}
+.status-detail-Cancel {
+  color: $color-blue-6;
+}
+
+.dropdown-v2 {
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  border-radius: 10px;
+  padding: 5px 10px 5px 24px;
+  display: flex;
+  gap: 18px;
+  padding-right: 16px;
+  width: 110px;
+  border-radius: 8px;
+  @include color($color-black);
+  @include MontserratRegular;
+
+  font-size: 15px;
+  letter-spacing: 0;
+  line-height: 24px;
+  outline: none;
+
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+  p {
+    @include MontserratRegular;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+
+    color: $color-black-4;
+  }
+}
+.buisness {
+  border-radius: 8px;
+  width: 100%;
+}
+@media (max-width: 65.62em) {
+  .buisness {
+    overflow-x: hidden;
+  }
+  .buisness-payment {
+    box-sizing: border-box;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    width: 100%;
+  }
+  .buisness-payment_heading {
+    width: 700px;
+  }
+  .buisness-payment_table {
+    width: 700px;
+  }
+}

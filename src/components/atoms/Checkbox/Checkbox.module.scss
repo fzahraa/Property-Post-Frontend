@@ -1,0 +1,25 @@
+@import "/src/assets/styles/global.scss";
+.o-saquare-checkbox__container-after {
+  width: 16px;
+  height: 16px;
+  background: $color-white;
+  border: 2px solid $color-primary !important;
+  border-radius: 4px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.o-saquare-checkbox {
+  &__container {
+    width: 16px;
+    height: 16px;
+    background: $color-white;
+    border: 2px solid $color-black;
+    border-radius: 4px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

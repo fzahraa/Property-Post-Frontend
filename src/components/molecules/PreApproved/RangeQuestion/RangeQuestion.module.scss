@@ -1,0 +1,63 @@
+@import "/src/assets/styles/global.scss";
+.range-question {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  h1 {
+    @include MontserratRegular;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 40px;
+    text-align: center;
+    color: $color-black;
+  }
+  h3 {
+    @include MontserratRegular;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 20px;
+    text-align: center;
+    color: $color-black;
+    margin-top: 16px;
+  }
+  &_container {
+    width: 100%;
+    max-width: 630px;
+    margin-top: 32px;
+    p {
+      @include MontserratRegular;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 22px;
+      line-height: 24px;
+      text-align: center;
+      color: $color-black;
+      padding: 12px 0 24px 0;
+    }
+  }
+  &_footer {
+    p {
+      @include MontserratRegular;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 20px;
+      text-align: center;
+      text-decoration-line: underline;
+      color: $color-primary;
+      cursor: pointer;
+    }
+  }
+}
+.range-question-bar {
+  height: 14px !important;
+}
+
+@media (max-width: 57.5em) {
+  .range-question {
+    padding-bottom: 60px;
+  }
+}

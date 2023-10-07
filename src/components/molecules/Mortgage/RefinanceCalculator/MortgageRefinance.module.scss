@@ -1,0 +1,302 @@
+@import "/src/assets/styles/global.scss";
+.refinance {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1440px;
+  border-top: 1px solid $color-black;
+  padding: 32px 40px;
+  margin-top: 16px;
+  &_heading {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    h1 {
+      @include MontserratRegular;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 30px;
+      line-height: 32px;
+      color: $color-black;
+    }
+    p {
+      @include MontserratRegular;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 17px;
+      line-height: 24px;
+      color: $color-black;
+    }
+  }
+  &_container {
+    display: flex;
+    gap: 80px;
+    margin-top: 32px;
+    &_left {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+      h2 {
+        @include MontserratRegular;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 26px;
+        color: $color-black;
+      }
+      &_inside {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+      }
+    }
+    &_right {
+      flex: 1;
+      h2 {
+        @include MontserratRegular;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 26px;
+        color: $color-black;
+      }
+      display: flex;
+      flex-direction: column;
+      gap: 60px;
+      &_inside {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+      }
+    }
+  }
+}
+.group-input {
+  border: 1px solid $color-black;
+  padding: 10px 12px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+}
+.form-input {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  label {
+    @include MontserratRegular;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    color: $color-black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    span {
+      @include MontserratRegular;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 16px;
+
+      color: $color-black;
+    }
+  }
+  h3 {
+    @include MontserratRegular;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    margin-top: -5px;
+    color: $color-black;
+  }
+}
+.form-input_inside {
+  box-sizing: border-box;
+  @include wh($height: 48px);
+
+  padding: 10px 14px;
+  border: 1px solid $color-gray-2;
+  box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+  border-radius: 8px;
+  @include backgroundColor($color-white);
+  @include color($color-black-4);
+  @include MontserratRegular;
+
+  font-size: 15px;
+  letter-spacing: 0;
+  line-height: 24px;
+  outline: none;
+  @include px($left: 8px, $right: 8px);
+}
+.two-col-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+.dropdown {
+  width: 100%;
+  border: 1px solid $color-gray-2;
+  border-radius: 10px;
+  display: flex;
+  gap: 24px;
+  height: 48px;
+  padding-right: 16px;
+  border-radius: 8px;
+  @include backgroundColor($color-white);
+  @include color($color-black);
+  @include MontserratRegular;
+
+  font-size: 15px;
+  letter-spacing: 0;
+  line-height: 24px;
+  outline: none;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  position: relative;
+  p {
+    @include MontserratRegular;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    padding-left: 10px;
+    color: $color-black-4;
+  }
+}
+.left-container-heading {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  h2 {
+    @include MontserratRegular;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 26px;
+    color: $color-black;
+  }
+  &_inside {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    &_top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      p {
+        @include MontserratRegular;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 20px;
+        color: $color-black;
+      }
+    }
+    span {
+      @include MontserratRegular;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 20px;
+      color: $color-black;
+    }
+  }
+}
+.refinance-cost {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  label {
+    @include MontserratRegular;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    color: $color-black;
+  }
+  &_radio {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    &_inside {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      label {
+        font-weight: 400;
+        font-size: 16px;
+      }
+    }
+  }
+  p {
+    @include MontserratRegular;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+    color: $color-black;
+  }
+  &_check-box {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    label {
+      font-weight: 500;
+      font-size: 16px;
+    }
+  }
+}
+
+@media (max-width: 82em) {
+  .refinance {
+    padding: 32px;
+  }
+}
+@media (max-width: 62.5em) {
+  .refinance {
+    padding: 32px 20px;
+  }
+}
+@media (max-width: 53.7em) {
+  .refinance_container {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+@media (max-width: 26.7em) {
+  .refinance {
+    padding: 32px 16px;
+  }
+  .refinance_heading {
+    h1 {
+      font-size: 28px;
+      line-height: 26px;
+    }
+    p {
+      font-size: 16px;
+      line-height: 20px;
+    }
+  }
+  .refinance_container_left {
+    h2 {
+      font-size: 24px;
+    }
+  }
+  .two-col-grid {
+    grid-template-columns: 1fr;
+  }
+}

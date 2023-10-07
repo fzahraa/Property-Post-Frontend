@@ -1,0 +1,55 @@
+@import "/src/assets/styles//global.scss";
+.section-heading {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  position: relative;
+  h1 {
+    margin: 0 auto;
+    @include MontserratRegular;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 40px;
+    color: $color-black;
+  }
+  span {
+    position: absolute;
+    right: 0;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 20px;
+    text-decoration-line: underline;
+    color: $color-primary;
+    cursor: pointer;
+  }
+}
+
+@media (max-width: 37.6em) {
+  .section-heading {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    height: fit-content;
+    align-items: flex-start;
+    h1 {
+      margin: 0;
+    }
+    span {
+      position: relative;
+    }
+  }
+}
+
+@media (max-width: 28em) {
+  .section-heading {
+    h1 {
+      font-size: 24px;
+      line-height: 28px;
+    }
+  }
+}

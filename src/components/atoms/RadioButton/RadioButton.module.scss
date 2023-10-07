@@ -1,0 +1,37 @@
+@import "/src/assets/styles/global.scss";
+.radio-button {
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  border: 2px solid $color-black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button__inside {
+  position: absolute;
+  margin: 0 auto;
+  height: 7px;
+  width: 7px;
+
+  border-radius: 50%;
+  margin-top: 0px;
+}
+.credit-card {
+  border: 2px solid $color-white;
+  @extend.radio-button;
+  position: relative;
+}
+.credit-card__inside {
+  background: $color-white !important;
+}
+
+.mortgage-refinance {
+  border: 2px solid $color-primary;
+  @extend.radio-button;
+  position: relative;
+}
+.mortgage-refinance__inside {
+  background: $color-primary !important;
+}

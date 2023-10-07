@@ -1,0 +1,102 @@
+@import "/src/assets/styles/global.scss";
+
+.payment-modal {
+  position: fixed;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 20;
+  background: rgba(52, 64, 84, 0.7);
+
+  &_inside {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    &_heading {
+      padding-bottom: 18px;
+      position: relative;
+      text-align: center;
+      width: 100%;
+      border-bottom: 1px solid $color-black;
+      h2 {
+        @include MontserratRegular;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 29px;
+
+        color: $color-black;
+      }
+      span {
+        position: absolute;
+        right: 32px;
+        top: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+      }
+    }
+    &_container {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      &_grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 16px;
+        max-width: 406px;
+      }
+      &_checkbox {
+        width: 100%;
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        max-width: 406px;
+        margin-top: 13px;
+        margin-bottom: 24px;
+      }
+    }
+  }
+}
+.form-input {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+  max-width: 406px;
+  margin-top: 24px;
+  label {
+    @include MontserratRegular;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    color: $color-black;
+  }
+}
+@media (max-width: 51.87em) {
+  .payment-modal_inside_heading {
+    h2 {
+      text-align: left;
+      font-size: 20px;
+    }
+    span {
+      right: 10px;
+    }
+  }
+}
+@media (max-width: 37.5em) {
+  .payment-modal_inside_container_grid {
+    grid-template-columns: 1fr;
+    width: 100%;
+    margin-top: 0px;
+  }
+}

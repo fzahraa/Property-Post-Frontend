@@ -1,0 +1,30 @@
+@import "/src/assets/styles/global.scss";
+.guide-blog {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1440px;
+  padding: 32px;
+  &_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+  }
+}
+@media (max-width: 52em) {
+  .guide-blog {
+    padding: 32px 10px;
+    &_container {
+      gap: 20px;
+    }
+  }
+}
+@media (max-width: 41.2em) {
+  .guide-blog {
+    padding: 32px 20px;
+
+    &_container {
+      gap: 20px;
+      grid-template-columns: 1fr;
+    }
+  }
+}

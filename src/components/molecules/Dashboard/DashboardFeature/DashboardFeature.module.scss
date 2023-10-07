@@ -1,0 +1,121 @@
+@import "/src/assets/styles/global.scss";
+.features {
+  background: $color-white;
+  box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+  padding: 24px 24px 32px 24px;
+  &_heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    h1 {
+      @include MontserratRegular;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 30px;
+      line-height: 32px;
+      color: $color-black;
+    }
+    span {
+      @include MontserratRegular;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 20px;
+      text-decoration-line: underline;
+      cursor: pointer;
+      color: $color-primary;
+    }
+    &_button {
+      width: fit-content;
+    }
+  }
+  &_inside {
+    margin-top: 16px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 16px;
+    row-gap: 24px;
+  }
+}
+@media (max-width: 87.25em) {
+  .features {
+    &_inside {
+      grid-template-columns: 1fr 1fr;
+      column-gap: 32px;
+      row-gap: 24px;
+    }
+  }
+}
+@media (max-width: 65.62em) {
+  .features {
+    padding: 36px 50px 24px 50px;
+    &_inside {
+      grid-template-columns: 1fr;
+      column-gap: 32px;
+      row-gap: 24px;
+    }
+    &_heading {
+      display: grid;
+      grid-template-columns: 1.5fr 1fr;
+      row-gap: 16px;
+      h1 {
+        @include MontserratRegular;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 24px;
+        color: $color-black;
+      }
+      span {
+        text-align: end;
+      }
+      &_button {
+        width: fit-content;
+        margin: 0 auto;
+        grid-column: 1 / span 3;
+      }
+    }
+  }
+}
+@media (max-width: 53.75em) {
+  .features {
+    padding: 0;
+    box-shadow: none;
+    background: none;
+  }
+}
+@media (max-width: 40em) {
+  .features {
+    background: $color-white;
+    box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    padding: 24px 24px 32px 24px;
+    margin: 0 24px;
+  }
+}
+@media (max-width: 29.62em) {
+  .features {
+    &_heading {
+      display: grid;
+      grid-template-columns: 1fr;
+      row-gap: 16px;
+      span {
+        text-align: start;
+      }
+      &_button {
+        width: 100%;
+        margin: 0;
+        grid-column: 1;
+      }
+    }
+  }
+}
+@media (max-width: 28em) {
+  .features {
+    padding: 0;
+    box-shadow: none;
+    background: none;
+    margin: 0;
+  }
+}

@@ -1,0 +1,37 @@
+@import "/src/assets/styles/global.scss";
+.switch {
+  background: #d9d9d9;
+  border-radius: 27px;
+  width: 58px;
+  height: 30px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  &_inside {
+    position: absolute;
+    background: $color-white;
+    height: 24px;
+    width: 24px;
+    border-radius: 50%;
+    left: 5px;
+  }
+}
+.active {
+  background: $color-blue-2;
+  border-radius: 27px;
+  width: 58px;
+  height: 30px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.active_inside {
+  position: absolute;
+  background: $color-white;
+  height: 24px;
+  width: 24px;
+  border-radius: 50%;
+  right: 5px;
+}

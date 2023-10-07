@@ -1,0 +1,208 @@
+@import "/src/assets/styles/global.scss";
+.business-form {
+  background: $color-white;
+  box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+  padding: 40px 40px 32px 32px;
+  h1 {
+    @include MontserratRegular;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 32px;
+    color: $color-black;
+  }
+  &_inside {
+    padding-left: 8px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+    margin-top: 24px;
+    &_left {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+    }
+    &_right {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+    }
+  }
+  &_footer {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 16px;
+    p {
+      @include MontserratRegular;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 28px;
+      color: $color-gray-10;
+      span {
+        color: $color-primary;
+        text-decoration: underline;
+        cursor: pointer;
+      }
+    }
+  }
+  &_button {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 16px;
+    max-width: 220px;
+  }
+}
+.form-input {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  label {
+    @include MontserratRegular;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    color: $color-black;
+  }
+}
+.dropdown {
+  width: 100%;
+  border: 1px solid $color-gray-10;
+  border-radius: 10px;
+  display: flex;
+  gap: 24px;
+  height: 48px;
+  padding-right: 16px;
+  border-radius: 8px;
+  @include backgroundColor($color-white);
+  @include color($color-black);
+  @include MontserratRegular;
+
+  font-size: 15px;
+  letter-spacing: 0;
+  line-height: 24px;
+  outline: none;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  position: relative;
+  p {
+    @include MontserratRegular;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+
+    color: $color-black-4;
+  }
+}
+.form-input_inside {
+  border: 1px solid $color-gray-2;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+}
+.dropdown-v2 {
+  width: 100%;
+  position: relative;
+
+  max-width: 140px;
+  border-radius: 10px;
+  display: flex;
+  gap: 24px;
+  height: 48px;
+  padding-right: 16px;
+  border-radius: 8px;
+  @include backgroundColor($color-white);
+  @include color($color-black);
+  @include MontserratRegular;
+
+  font-size: 15px;
+  letter-spacing: 0;
+  line-height: 24px;
+  outline: none;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  p {
+    @include MontserratRegular;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+
+    color: $color-black-4;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    span {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}
+.form-input_inside {
+  border: 1px solid $color-gray-2;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+}
+.from-buttons {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.form-input {
+  textarea {
+    box-sizing: border-box;
+    padding: 10px 14px;
+    border: 1px solid $color-gray-2;
+    box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+    border-radius: 8px;
+    @include backgroundColor($color-white);
+    @include color($color-black-4);
+    @include MontserratRegular;
+
+    font-size: 15px;
+    letter-spacing: 0;
+    line-height: 24px;
+    outline: none;
+    @include px($left: 8px, $right: 8px);
+    resize: none;
+    height: 130px;
+  }
+}
+@media (max-width: 85.37em) {
+  .from-buttons {
+    flex-direction: column;
+  }
+  .form-input {
+    textarea {
+      height: 180px;
+    }
+  }
+}
+@media (max-width: 62.5em) {
+  .business-form_inside {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 48em) {
+  .business-form {
+    padding: 40px 12px 32px 12px;
+    h1 {
+      font-size: 24px;
+      line-height: 24px;
+    }
+  }
+}

@@ -1,0 +1,126 @@
+@import "/src/assets/styles/global.scss";
+.header {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 40px;
+  position: relative;
+
+  &_container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &_logo {
+      padding-top: 15px;
+      span {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+      }
+    }
+    &_mobile-menu {
+      display: none;
+    }
+    &_button {
+      margin-top: 14px;
+    }
+  }
+}
+
+@media (max-width: 60.25em) {
+  .header {
+    padding: 0 20px 0 0;
+    &_container {
+      &_navbar {
+        display: none;
+      }
+      &_button {
+        display: none;
+      }
+    }
+  }
+  .header_container_mobile-menu {
+    display: block;
+    &_navigation {
+      span {
+        cursor: pointer;
+      }
+      &_menu {
+        position: absolute;
+        display: block;
+        margin-top: 38px;
+        left: 0;
+        visibility: hidden;
+      }
+    }
+  }
+}
+.active-menu {
+  position: absolute;
+  display: block;
+  margin-top: 38px;
+  left: 0;
+  visibility: visible;
+  z-index: 100;
+}
+.profile_btn {
+  margin-top: 14px;
+  border: 1px solid $color-primary;
+  border-radius: 8px;
+  padding: 4px 16px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  p {
+    @include MontserratRegular;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    color: $color-black-4;
+  }
+}
+.profile-image {
+  height: 40px !important;
+  width: 40px !important;
+}
+.dropdown {
+  border: 1px solid #787878;
+  border-radius: 10px;
+  display: flex;
+  gap: 24px;
+  height: 48px;
+  padding-right: 16px;
+  border-radius: 8px;
+  @include backgroundColor($color-white);
+  @include color($color-black);
+  @include MontserratRegular;
+
+  font-size: 15px;
+  letter-spacing: 0;
+  line-height: 24px;
+  outline: none;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  position: relative;
+  // p {
+  //   @include MontserratRegular;
+  //   font-style: normal;
+  //   font-weight: 400;
+  //   font-size: 18px;
+  //   line-height: 24px;
+  //   padding-left: 14px;
+  //   color: $color-black-4;
+  // }
+}
+
+.profile-setting {
+  position: relative !important;
+}

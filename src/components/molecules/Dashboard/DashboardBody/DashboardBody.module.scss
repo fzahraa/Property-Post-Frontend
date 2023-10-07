@@ -1,0 +1,48 @@
+@import "/src/assets/styles/global.scss";
+.dashboard-body {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1440px;
+  height: 100%;
+  display: flex;
+  position: relative;
+}
+.sidebar {
+  width: 100%;
+  max-width: 290px;
+}
+.dashboard-content {
+  width: 100%;
+  overflow-x: hidden;
+}
+@media (max-width: 48em) {
+  .sidebar {
+    width: 100%;
+    max-width: 260px;
+  }
+}
+@media (max-width: 40em) {
+  .dashboard-body {
+    position: relative !important;
+  }
+  .sidebar {
+    position: absolute;
+    transition: all 0.4s;
+  }
+  .sidebar-after {
+    transform: translateX(0%);
+    z-index: 100;
+  }
+  .sidebar-before {
+    transform: translateX(-100%);
+    z-index: 100;
+  }
+  .sidebar-after-background {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.4);
+    width: 100%;
+    height: 100%;
+    transition: all 0.4s;
+    z-index: 10;
+  }
+}

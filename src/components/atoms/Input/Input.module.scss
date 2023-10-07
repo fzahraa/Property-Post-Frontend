@@ -1,0 +1,140 @@
+@import "/src/assets/styles/global.scss";
+.a-input {
+  box-sizing: border-box;
+  @include wh($height: 44px);
+
+  padding: 10px 14px;
+  border: 1px solid $color-gray-2;
+  box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+  border-radius: 8px;
+  @include backgroundColor($color-white);
+  @include color($color-black-4);
+  @include MontserratRegular;
+
+  font-size: 15px;
+  letter-spacing: 0;
+  line-height: 24px;
+  outline: none;
+  @include px($left: 8px, $right: 8px);
+}
+.a-input--disabled {
+  ///Todo: add necessary styling here
+  cursor: not-allowed;
+}
+
+.a-input--no-border {
+  border: none;
+}
+.message-textarea {
+  height: 50px;
+}
+.intro-search {
+  border: none;
+  width: 60%;
+  background: none;
+  box-shadow: none;
+  font-size: 16px;
+  line-height: 29px;
+}
+.contact-form {
+  width: 100%;
+  max-width: 628px;
+  border: 1px solid $color-primary;
+  color: $color-gray-4;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  @include wh($height: 48px);
+}
+
+.input-v2 {
+  border: none;
+  padding: 0;
+  height: 24px;
+  box-shadow: none;
+}
+.auth-form {
+  border: 1px solid $color-black-2;
+  background: $color-white;
+  @include MontserratRegular;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 120%;
+  letter-spacing: 0.005em;
+
+  color: $color-black;
+  &::placeholder {
+    color: rgba(0, 0, 0, 0.6);
+  }
+}
+.add-post-form {
+  border: 1px solid $color-gray-2;
+  background: $color-white;
+  @include MontserratRegular;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.005em;
+
+  color: $color-black;
+  &::placeholder {
+    color: rgba(0, 0, 0, 0.6);
+  }
+}
+.mortgage-fillter {
+  @extend .add-post-form;
+  @include wh($height: 46px);
+  max-width: 150px;
+}
+.mortgage-fillter-percentage {
+  @extend .add-post-form;
+  box-shadow: none;
+  max-width: 90px;
+  border: none;
+}
+.dropdown-search {
+  border: none;
+  @extend.add-post-form;
+  box-shadow: none;
+}
+.dropdown-search-number {
+  @extend .dropdown-search;
+  box-shadow: none;
+}
+
+.add-post-form-textarea {
+  height: 100px !important;
+}
+@media (max-width: 27em) {
+  .o-code-verification-input {
+    max-width: 70px;
+  }
+  .dropdown-search-number {
+    max-width: 150px;
+  }
+}
+
+@media (max-width: 23.1em) {
+  .o-code-verification-input {
+    max-width: 50px;
+    height: 50px;
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 50em) {
+  .contact-form {
+    max-width: 100%;
+  }
+}
+@media (max-width: 83.16em) {
+  .mortgage-fillter {
+    width: 100%;
+    max-width: 100%;
+  }
+  .mortgage-fillter-percentage {
+    max-width: 100%;
+  }
+}

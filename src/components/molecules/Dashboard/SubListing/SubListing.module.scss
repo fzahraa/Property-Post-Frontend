@@ -1,0 +1,57 @@
+@import "/src/assets/styles/global.scss";
+.sub-listing {
+  background: $color-white;
+  box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+  padding: 24px 24px 32px 24px;
+  &_inside {
+    margin-top: 16px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 16px;
+    row-gap: 24px;
+  }
+}
+@media (max-width: 87.25em) {
+  .sub-listing {
+    &_inside {
+      grid-template-columns: 1fr 1fr;
+      column-gap: 32px;
+      row-gap: 24px;
+    }
+  }
+}
+@media (max-width: 65.62em) {
+  .sub-listing {
+    padding: 36px 50px 24px 50px;
+    &_inside {
+      grid-template-columns: 1fr;
+      column-gap: 32px;
+      row-gap: 24px;
+    }
+  }
+}
+@media (max-width: 53.75em) {
+  .sub-listing {
+    padding: 0;
+    box-shadow: none;
+    background: none;
+  }
+}
+@media (max-width: 40em) {
+  .sub-listing {
+    background: $color-white;
+    box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    padding: 24px 24px 32px 24px;
+    margin: 0 24px;
+  }
+}
+@media (max-width: 28em) {
+  .sub-listing {
+    padding: 0;
+    box-shadow: none;
+    background: none;
+    margin: 0;
+  }
+}

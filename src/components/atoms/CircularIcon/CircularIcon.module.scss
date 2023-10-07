@@ -1,0 +1,11 @@
+@import "/src/assets/styles/global.scss";
+
+.icon-circular {
+  height: 18px;
+  width: 18px;
+  border-radius: 50%;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

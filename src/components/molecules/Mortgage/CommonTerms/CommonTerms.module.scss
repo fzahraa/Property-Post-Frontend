@@ -1,0 +1,64 @@
+@import "/src/assets/styles/global.scss";
+.common-term {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1440px;
+  padding: 0px 32px 40px 32px;
+  h1 {
+    @include MontserratRegular;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 32px;
+    color: $color-black;
+    margin-bottom: 32px;
+  }
+  &_inside {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    h2 {
+      @include MontserratRegular;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 24px;
+      color: $color-black;
+    }
+    p {
+      @include MontserratRegular;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 20px;
+      color: $color-black;
+      margin-bottom: 32px;
+    }
+  }
+}
+
+@media (max-width: 62.5em) {
+  .common-term {
+    padding: 0px 20px 40px 20px;
+  }
+}
+@media (max-width: 48em) {
+  .common-term {
+    h1 {
+      font-size: 24px;
+      line-height: 28px;
+    }
+    &_inside {
+      h2 {
+        font-size: 18px;
+        line-height: 20px;
+      }
+      p {
+        font-size: 16px;
+        line-height: 20px;
+        color: $color-black;
+        margin-bottom: 32px;
+      }
+    }
+  }
+}

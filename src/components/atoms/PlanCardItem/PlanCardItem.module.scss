@@ -1,0 +1,76 @@
+@import "/src/assets/styles/global.scss";
+.plan-item {
+  background: $color-white;
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+  padding: 28px 24px;
+  height: 460px;
+  h2 {
+    @include MontserratRegular;
+    color: $color-black;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    margin-bottom: 12px;
+    text-align: center;
+  }
+  h3 {
+    @include MontserratRegular;
+    color: $color-black;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 24px;
+    text-align: center;
+  }
+  h1 {
+    @include MontserratRegular;
+    color: $color-black;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 39px;
+    margin-bottom: 28px;
+    text-align: center;
+    span {
+      font-size: 16px;
+      text-align: center;
+    }
+  }
+  &_button {
+    margin: 0 auto;
+    max-width: 210px;
+    margin-bottom: 46px;
+    height: 51px;
+    text-align: center;
+  }
+  &_inside {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 16px;
+    text-align: center;
+    justify-content: center;
+  }
+}
+.active {
+  @extend.plan-item;
+  background: rgba(197, 32, 47, 0.6);
+  color: $color-white;
+
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+  h1 {
+    color: $color-white;
+    text-align: center;
+  }
+  h2 {
+    color: $color-white;
+    text-align: center;
+  }
+  h3 {
+    color: $color-white;
+    text-align: center;
+  }
+}

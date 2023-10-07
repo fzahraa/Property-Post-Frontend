@@ -1,0 +1,52 @@
+@import "/src/assets/styles/global.scss";
+.sidebar {
+  width: 100%;
+  max-width: 290px;
+  background: $color-white;
+  padding: 40px 0;
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+  z-index: 200;
+  height: 100%;
+  &_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+    height: 100%;
+    &_bottom {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      padding: 20px 40px;
+      cursor: pointer;
+      span {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      p {
+        @include MontserratRegular;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 24px;
+
+        color: $color-black;
+      }
+    }
+  }
+}
+@media (max-width: 48em) {
+  .sidebar {
+    width: 100%;
+    max-width: 260px;
+    padding: 40px 0;
+  }
+}
+@media (max-width: 40em) {
+  .sidebar {
+    width: 100%;
+    padding: 40px 0;
+    height: 100vh;
+  }
+}

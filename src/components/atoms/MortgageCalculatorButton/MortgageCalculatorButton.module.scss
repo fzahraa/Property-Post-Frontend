@@ -1,0 +1,32 @@
+@import "/src/assets/styles/global.scss";
+.mortgage-calculator {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 17px;
+  border: 1px solid $color-white;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  width: fit-content;
+  cursor: pointer;
+  span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  p {
+    @include MontserratRegular;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: $color-white;
+  }
+}
+@media (max-width: 28.25em) {
+  .mortgage-calculator {
+    width: 100%;
+    max-width: 362px;
+    margin: 0 auto;
+  }
+}

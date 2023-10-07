@@ -1,0 +1,92 @@
+@import "/src/assets/styles/global.scss";
+.home {
+  margin-top: 60px;
+  &_heading {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    h1 {
+      @include MontserratRegular;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 32px;
+      line-height: 40px;
+      text-align: center;
+
+      color: $color-primary;
+    }
+    p {
+      @include MontserratRegular;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 29px;
+      text-align: center;
+      color: $color-black;
+    }
+  }
+  &_container {
+    margin-top: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 40px;
+
+    h3 {
+      @include MontserratRegular;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 24px;
+      text-align: center;
+      color: $color-black;
+    }
+    &_inside {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+      column-gap: 30px;
+      row-gap: 24px;
+      width: 100%;
+      max-width: 720px;
+
+      &_button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        padding: 22px 10px;
+        cursor: pointer;
+        width: 100%;
+        max-width: 350px;
+        background: $color-white;
+        box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.25);
+        border-radius: 8px;
+        border: 1px solid transparent;
+        h2 {
+          @include MontserratRegular;
+          font-style: normal;
+          font-weight: 500;
+          font-size: 18px;
+          line-height: 20px;
+          color: $color-black;
+        }
+        &:hover {
+          border: 1px solid $color-primary;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 35em) {
+  .home_container_inside {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .home_container_inside_button {
+    padding: 16px 10px;
+  }
+}

@@ -1,0 +1,130 @@
+@import "/src/assets/styles//global.scss";
+.a-button {
+  @include radius(6px);
+  @include MontserratRegular;
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 24px;
+  outline: none;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  &:hover {
+    opacity: 0.9;
+    transition: 0.3s;
+  }
+}
+
+.a-button--primary {
+  background-color: $color-primary;
+  color: $color-white;
+  padding: 10px 14px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-size: 16px;
+  line-height: 29px;
+}
+.a-button--secondary {
+  background-color: $color-white;
+  color: $color-primary;
+  border: 1px solid $color-primary;
+  padding: 10px 8px;
+  font-size: 12px;
+
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 400;
+
+  gap: 4px;
+}
+.a-button--tertiary {
+  background-color: $color-white;
+  color: $color-primary;
+  border: 1px solid $color-primary;
+  padding: 11px 14px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+.a-button--transparent {
+  background-color: $color-white;
+  color: $color-primary;
+  padding: 10px 14px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+.a-button--transparent-secondary {
+  background-color: $color-white;
+  color: $color-black-2;
+  padding: 8px 14px;
+  border: 1px solid #d0d5dd;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+.a-button--transparent-tertiary {
+  background-color: $color-white;
+  color: $color-black-2;
+  padding: 10px 14px;
+  border: 1px solid #d0d5dd;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+.a-button--primary-v2 {
+  background-color: $color-primary;
+  color: $color-white;
+  padding: 5px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-size: 16px;
+  line-height: 29px;
+}
+.a-button--primary-intro {
+  background-color: $color-primary;
+  color: $color-white;
+  padding: 10px 14px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  font-size: 16px;
+  line-height: 29px;
+  div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+  }
+}
+@media (max-width: 26.75em) {
+  .a-button {
+    max-width: 400px !important;
+    margin: 0;
+    width: 100%;
+  }
+}

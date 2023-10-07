@@ -1,0 +1,57 @@
+@import "/src/assets/styles/global.scss";
+.single-item {
+  padding: 30px 16px 16px 16px;
+  background: $color-white;
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+  cursor: pointer;
+  width: 220px;
+  &_inside {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    span {
+      @include MontserratRegular;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 30px;
+
+      color: $color-black;
+    }
+  }
+  p {
+    @include MontserratRegular;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    color: $color-gray-2;
+    text-align: center;
+    margin-top: 22px;
+  }
+}
+
+@media (max-width: 78.71em) {
+  .single-item {
+    width: 100%;
+    max-width: 220px;
+    &_inside {
+      gap: 24px;
+      span {
+        font-size: 20px;
+        line-height: 20px;
+      }
+    }
+    p {
+      font-size: 16px;
+      line-height: 16px;
+    }
+  }
+}
+@media (max-width: 57.37em) {
+  .single-item {
+    width: 100%;
+    max-width: 100%;
+  }
+}

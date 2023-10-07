@@ -1,0 +1,260 @@
+@import "/src/assets/styles/global.scss";
+.payments {
+  margin-top: 16px;
+  &_heading {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    h2 {
+      @include MontserratRegular;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 32px;
+      color: $color-black;
+      span {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 24px;
+      }
+    }
+    p {
+      @include MontserratRegular;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 24px;
+
+      color: $color-gray-2;
+    }
+  }
+  &_inside {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &_left {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      &_container {
+        display: flex;
+        align-items: center;
+        gap: 14px;
+        h3 {
+          @include MontserratRegular;
+          font-style: normal;
+          font-weight: 500;
+          font-size: 18px;
+          line-height: 24px;
+          color: $color-black;
+        }
+      }
+      span {
+        @include MontserratRegular;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 20px;
+        text-decoration-line: underline;
+        color: $color-primary;
+        padding-left: 33px;
+        cursor: pointer;
+      }
+    }
+    p {
+      @include MontserratRegular;
+
+      font-style: normal;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 24px;
+      text-align: right;
+      color: $color-black;
+    }
+  }
+  &_footer {
+    margin-top: 24px;
+    h3 {
+      @include MontserratRegular;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 28px;
+      line-height: 32px;
+      color: $color-black;
+      display: flex;
+      align-items: flex-end;
+      gap: 8px;
+      p {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 24px;
+      }
+      span {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+    p {
+      @include MontserratRegular;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 22px;
+      color: $color-gray-2;
+      margin-top: 12px;
+    }
+    &_inside {
+      margin-top: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      h4 {
+        @include MontserratRegular;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 22px;
+        line-height: 24px;
+        color: $color-black;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        span {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+      }
+    }
+    &_container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-right: 24px;
+      margin-top: 24px;
+      &_button {
+        width: fit-content;
+      }
+      span {
+        @include MontserratRegular;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 22px;
+        text-align: center;
+        text-decoration-line: underline;
+        color: $color-primary;
+        cursor: pointer;
+      }
+    }
+    &_text {
+      display: flex;
+      align-items: flex-end;
+      gap: 10px;
+      margin-top: 20px;
+      p {
+        @include MontserratRegular;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        color: $color-black;
+      }
+      span {
+        @include MontserratRegular;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        text-decoration-line: underline;
+        color: $color-primary;
+        cursor: pointer;
+      }
+    }
+  }
+}
+.payment-detail {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+@media (max-width: 70.62em) {
+  .payments_footer_container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+}
+@media (max-width: 30em) {
+  .payments_footer_text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .payments {
+    &_heading {
+      h2 {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 24px;
+        span {
+          font-size: 16px;
+        }
+      }
+      p {
+        font-size: 16px;
+        line-height: 20px;
+      }
+    }
+    &_inside {
+      &_left {
+        &_container {
+          h3 {
+            font-size: 16px;
+            line-height: 20px;
+          }
+        }
+        span {
+          font-size: 13px;
+          line-height: 16px;
+        }
+      }
+      p {
+        font-size: 18px;
+        line-height: 20px;
+      }
+    }
+    &_footer {
+      h3 {
+        font-weight: 500;
+        font-size: 17px;
+        line-height: 24px;
+        p {
+          font-size: 16px;
+        }
+      }
+      p {
+        font-size: 15px;
+      }
+      &_inside {
+        h4 {
+          font-weight: 500;
+          font-size: 17px;
+        }
+      }
+      &_container {
+        span {
+          font-weight: 500;
+          font-size: 18px;
+          line-height: 22px;
+        }
+      }
+      &_text {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+    }
+  }
+}

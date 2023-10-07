@@ -1,0 +1,29 @@
+@import "/src/assets/styles/global.scss";
+.input-label {
+  border: 1px solid $color-black;
+  width: 100%;
+  border-radius: 8px;
+  padding: 8px 12px;
+  position: relative;
+  &_inside {
+    position: absolute;
+    left: 8px;
+    top: -10px;
+    background: $color-white;
+    padding: 0 4px;
+    span {
+      @include MontserratRegular;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 14px;
+      color: $color-black;
+    }
+  }
+}
+.description {
+  height: 100px;
+}
+.detail-form {
+  border: 1px solid $color-black-2;
+}

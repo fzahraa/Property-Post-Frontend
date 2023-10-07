@@ -1,0 +1,64 @@
+@import "/src/assets/styles/global.scss";
+
+.modal-container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 20;
+}
+.singnup-auth {
+  width: 242px;
+  padding: 21px 0;
+  background-color: $color-white;
+
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+}
+.remove-card-modal {
+  width: 600px;
+  height: 300px;
+  padding: 18px 0;
+  background-color: $color-white;
+
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+}
+.payment-modal {
+  width: 770px;
+  padding: 20px 0;
+  background-color: $color-white;
+  border-radius: 16px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+}
+@media (max-width: 32.5em) {
+  .select-payment-container {
+    width: 400px;
+  }
+}
+
+@media (max-width: 23.1em) {
+  .password-reset-container {
+    width: 280px;
+  }
+}
+@media (max-width: 51.87em) {
+  .payment-modal {
+    width: 570px;
+    padding: 20px 14px;
+  }
+}
+@media (max-width: 37.5em) {
+  .payment-modal {
+    width: 370px;
+  }
+}
+@media (max-width: 27.34em) {
+  .password-reset-container {
+    width: 350px;
+  }
+  .payment-modal {
+    width: 300px;
+  }
+}
+body.modal-open {
+  overflow: hidden !important;
+}

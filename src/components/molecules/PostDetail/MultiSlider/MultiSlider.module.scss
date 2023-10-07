@@ -1,0 +1,140 @@
+@import "/src/assets/styles/global.scss";
+.post_inside_slider-2 {
+  width: 100%;
+  max-width: 840px;
+  position: relative;
+}
+.slider-item {
+  background: $color-white;
+  width: 100%;
+  max-width: 154px;
+  position: relative;
+}
+
+#left-icon {
+  background: $color-white;
+  padding: 11px;
+  border-radius: 50%;
+  width: 28px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  bottom: 50%;
+  left: 20px;
+  z-index: 100;
+  span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 2px;
+  }
+}
+#right-icon {
+  background: $color-white;
+  padding: 11px;
+  border-radius: 50%;
+  width: 28px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  bottom: 50%;
+  right: 20px;
+  z-index: 100;
+  span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 2px;
+  }
+}
+.slider-image {
+  height: 600px !important;
+  border-radius: 8px;
+}
+.slider-small-image {
+  height: 154px !important;
+  width: 154px !important;
+  border-radius: 8px;
+}
+.post_inside_slider-2 {
+  width: 100%;
+  max-width: 840px;
+  position: relative;
+}
+
+@media (max-width: 80em) {
+  .post_inside_slider-2 {
+    max-width: 780px;
+  }
+}
+@media (max-width: 73.5em) {
+  .post_inside_slider-2 {
+    max-width: 700px;
+  }
+}
+@media (max-width: 62.5em) {
+  .post_inside_slider-2 {
+    max-width: 580px;
+  }
+}
+@media (max-width: 56.25em) {
+  .post_inside_slider-2 {
+    max-width: 750px;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 48em) {
+  .post_inside_slider-2 {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  #right-icon {
+    right: 40px;
+  }
+}
+@media (max-width: 38.75em) {
+  .post_inside_slider-2 {
+    max-width: 550px;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 35.5em) {
+  .post_inside_slider-2 {
+    max-width: 450px;
+    margin: 0 auto;
+  }
+  .slider-item {
+    width: 100%;
+    max-width: 204px;
+  }
+  .slider-small-image {
+    width: 100% !important;
+  }
+}
+@media (max-width: 30em) {
+  .post_inside_slider-2 {
+    max-width: 380px;
+    // max-width: 100%;
+    margin: 0 auto;
+  }
+  .slider-item {
+    max-width: 100% !important;
+  }
+  .slider-small-image {
+    width: 100% !important;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 25.5em) {
+  .post_inside_slider-2 {
+    max-width: 300px;
+    margin: 0 auto;
+  }
+}

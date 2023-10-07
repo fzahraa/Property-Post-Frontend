@@ -1,0 +1,35 @@
+@import "/src/assets/styles/global.scss";
+.dropdown-label {
+  border: 1px solid $color-black;
+  width: 100%;
+  border-radius: 8px;
+  padding: 8px 12px;
+  position: relative;
+  height: 42px;
+  display: flex;
+  padding-right: 20px;
+  align-items: center;
+  justify-content: space-between;
+  span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: rotate(270deg);
+    cursor: pointer;
+  }
+
+  &_inside {
+    position: absolute;
+    top: -10px;
+    background: $color-white;
+    padding: 0 4px;
+    p {
+      @include MontserratRegular;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 14px;
+      color: $color-black;
+    }
+  }
+}

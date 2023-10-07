@@ -1,0 +1,126 @@
+@import "/src/assets/styles/global.scss";
+.key-feature {
+  margin: 0 auto;
+  width: 100%;
+  &_heading {
+    border-bottom: 1px solid #787878;
+    h1 {
+      @include MontserratRegular;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 32px;
+      line-height: 39px;
+
+      color: $color-black;
+    }
+  }
+  &_feautre-list {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-top: 30px;
+    margin-bottom: 32px;
+    flex-wrap: wrap;
+    span {
+      padding: 6px 12px;
+      background: #d9d9d9;
+      border-radius: 8px;
+
+      @include MontserratRegular;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 20px;
+      color: $color-black;
+    }
+  }
+  &_detail {
+    &_rent {
+      display: flex;
+      align-items: center;
+      gap: 3px;
+      h3 {
+        @include MontserratRegular;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 24px;
+        color: $color-black;
+      }
+      p {
+        @include MontserratRegular;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 24px;
+
+        color: $color-primary;
+        span {
+          font-style: normal;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 20px;
+          color: $color-black;
+        }
+      }
+    }
+  }
+  &_detail-list {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 550px;
+    margin-top: 24px;
+    margin-top: 24px;
+    &_item {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      span {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      p {
+        @include MontserratRegular;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        color: $color-black;
+      }
+    }
+  }
+  &_button {
+    display: flex;
+    max-width: 430px;
+    align-items: center;
+    gap: 32px;
+    margin-top: 32px;
+  }
+}
+@media (max-width: 37.5em) {
+  .key-feature_feautre-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .key-feature_detail-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 25.7em) {
+  .key-feature_feautre-list {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .key-feature_detail-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .key-feature_button {
+    flex-direction: column;
+  }
+}

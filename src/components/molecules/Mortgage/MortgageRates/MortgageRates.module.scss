@@ -1,0 +1,425 @@
+@import "/src/assets/styles/global.scss";
+.rates {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1440px;
+  border-top: 1px solid $color-black;
+  padding: 32px 32px;
+  margin-top: 16px;
+  &_heading {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    h1 {
+      @include MontserratRegular;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 30px;
+      line-height: 32px;
+      color: $color-black;
+    }
+    p {
+      @include MontserratRegular;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 17px;
+      line-height: 24px;
+      color: $color-black;
+    }
+  }
+  &_fillter {
+    display: flex;
+    align-items: flex-end;
+    gap: 10px;
+    justify-content: space-between;
+    &_fillter {
+      width: fit-content;
+    }
+  }
+  &_tab {
+    margin-top: 24px;
+    padding: 10px;
+    &_header {
+      display: flex;
+      align-items: center;
+      gap: 80px;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+      h3 {
+        @include MontserratRegular;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 20px;
+        color: $color-gray-2;
+      }
+      &_tabs {
+        display: flex;
+        align-items: center;
+        gap: 24px;
+        p {
+          @include MontserratRegular;
+
+          font-style: normal;
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 20px;
+          color: $color-gray-2;
+          padding-bottom: 5px;
+          border-bottom: 3px solid transparent;
+          cursor: pointer;
+        }
+      }
+    }
+    &_veteran {
+      margin-top: 24px;
+      background: $color-gray-16;
+      border-radius: 8px;
+      padding: 8px 16px;
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      p {
+        @include MontserratRegular;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 20px;
+        color: $color-black;
+      }
+      span {
+        @include MontserratRegular;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        color: $color-black;
+      }
+    }
+    &_content {
+      margin-top: 24px;
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+    }
+    &_footer {
+      margin-top: 16px;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      p {
+        @include MontserratRegular;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        color: $color-black;
+        text-align: center;
+        display: flex;
+        gap: 2px;
+        span {
+          color: $color-primary;
+          text-decoration: underline;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+.rates_fillter {
+  width: 100%;
+}
+.active-tab {
+  @include MontserratRegular;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: $color-primary !important;
+  padding-bottom: 5px;
+  border-bottom: 3px solid $color-primary !important;
+}
+.main-container {
+  background: $color-white;
+  box-shadow: 0px 1px 10px 1px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+  margin-top: 24px;
+  padding: 24px 20px;
+  &_footer {
+    margin-top: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    span {
+      @include MontserratRegular;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 20px;
+      text-decoration-line: underline;
+      color: $color-primary;
+    }
+  }
+}
+.fillter-container {
+  display: flex;
+  align-items: flex-end;
+  gap: 10px;
+  justify-content: space-between;
+  gap: 24px;
+  &_button {
+    width: 100%;
+    max-width: fit-content;
+  }
+}
+.fillter-cover {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  label {
+    @include MontserratRegular;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+
+    color: $color-black;
+  }
+  &_input {
+    border: 1px solid $color-black;
+    padding: 10px 12px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    max-width: 200px;
+    span {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+    }
+  }
+  &_inside {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border: 1px solid $color-gray-2;
+    border-radius: 8px;
+    &_left {
+      border-right: 1px solid $color-gray-2;
+      width: 100%;
+    }
+    &_right {
+      width: 100%;
+    }
+  }
+}
+.button-fillter {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  &_left {
+    border: 1px solid $color-gray-2;
+    padding: 12px 10px;
+    border-right: none;
+    cursor: pointer;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    width: 100%;
+
+    p {
+      @include MontserratRegular;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 20px;
+      text-align: center;
+      color: $color-black;
+    }
+  }
+  &_right {
+    border: 1px solid $color-gray-2;
+    padding: 12px 10px;
+    border-left: none;
+    cursor: pointer;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    width: 100%;
+
+    p {
+      @include MontserratRegular;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 20px;
+      text-align: center;
+      color: $color-black;
+    }
+  }
+}
+.active-left {
+  border: 1px solid $color-primary;
+  padding: 12px 10px;
+  border-right: visible;
+  cursor: pointer;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  width: 100%;
+
+  p {
+    @include MontserratRegular;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: $color-primary;
+  }
+}
+.active-right {
+  @extend .active-left;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.dropdown {
+  width: 100%;
+  border: 1px solid $color-gray-2;
+  border-radius: 10px;
+  display: flex;
+  gap: 24px;
+  height: 46px;
+  padding-right: 16px;
+  border-radius: 8px;
+  @include backgroundColor($color-white);
+  @include color($color-black);
+  @include MontserratRegular;
+
+  font-size: 15px;
+  letter-spacing: 0;
+  line-height: 24px;
+  outline: none;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  position: relative;
+  p {
+    @include MontserratRegular;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    padding-left: 16px;
+    color: $color-black-4;
+  }
+}
+@media (max-width: 83.16em) {
+  .rates_fillter {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .fillter-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 24px;
+    &_button {
+      margin: 0 auto;
+      width: 100%;
+      max-width: 400px;
+    }
+  }
+
+  .fillter-cover_input {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+@media (max-width: 40em) {
+  .rates {
+    padding: 32px 16px;
+  }
+  .main-container {
+    background: $color-white;
+    box-shadow: none;
+    border-radius: 0;
+    margin-top: 24px;
+    padding: 24px 0px;
+  }
+}
+@media (max-width: 32.5em) {
+  .rates_fillter {
+    grid-template-columns: 1fr;
+  }
+  .main-container_footer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+}
+@media (max-width: 76.43em) {
+  .rates {
+    padding: 32px 16px;
+  }
+}
+@media (max-width: 68.75em) {
+  .rates_tab_footer {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    p {
+      text-align: flex-start;
+      flex-direction: column;
+      text-align: start;
+      display: flex;
+      justify-content: flex-start;
+      gap: 2px;
+      span {
+        text-align: start;
+      }
+    }
+  }
+}
+@media (max-width: 48em) {
+  .rates_tab_header {
+    gap: 8px;
+    justify-content: space-between;
+    h3 {
+      font-size: 14px;
+    }
+  }
+  .rates_tab_header_tabs {
+    gap: 16px;
+    p {
+      font-size: 13px;
+      line-height: 20px;
+    }
+  }
+}
+@media (max-width: 28.12em) {
+  .rates {
+    padding: 32px 10px;
+  }
+  .rates_tab {
+    padding: 10px 0;
+  }
+  .rates_tab_veteran {
+    padding: 8px;
+
+    p {
+      font-size: 12px;
+      line-height: 20px;
+    }
+    span {
+      font-size: 12px;
+    }
+  }
+  .rates_tab_header_tabs {
+    gap: 16px;
+  }
+}

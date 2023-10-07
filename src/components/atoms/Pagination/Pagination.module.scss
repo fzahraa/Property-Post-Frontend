@@ -1,0 +1,129 @@
+@import "/src/assets/styles/global.scss";
+.pagination {
+  margin-top: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+  &__inside {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    &__previous {
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      span {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+    &__links {
+      display: flex;
+      gap: 12px;
+      align-items: center;
+      justify-content: center;
+      a {
+        height: 36px;
+        width: 36px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        color: $color-black;
+        border-radius: 50%;
+        font-size: 20px;
+        &:hover {
+          background: $color-primary;
+          color: $color-white;
+        }
+      }
+    }
+
+    &__links > :nth-child(2) {
+      background: $color-primary;
+      color: $color-white;
+    }
+    &__next {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      cursor: pointer;
+      gap: 24px;
+      span {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      &_last {
+        border: 1px solid $color-black;
+        padding: 8px 14px;
+        border-radius: 8px;
+        position: relative;
+        display: flex;
+        align-items: center;
+        gap: 70px;
+
+        &_top {
+          position: absolute;
+          background: $color-white;
+          top: -8px;
+          height: fit-content !important;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding: 0 4px;
+          p {
+            @include MontserratRegular;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 12px !important;
+            line-height: 14px !important;
+            color: $color-black;
+          }
+        }
+        p {
+          @include MontserratRegular;
+          font-style: normal;
+          font-weight: 500;
+          font-size: 20px;
+          line-height: 24px;
+          color: $color-black;
+        }
+        span {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 45.62em) {
+  .pagination__inside__links > :nth-child(9) {
+    display: none;
+  }
+  .pagination__inside__links > :nth-child(8) {
+    display: none;
+  }
+  .pagination__inside__links > :nth-child(7) {
+    display: none;
+  }
+  .pagination__inside__links > :nth-child(6) {
+    display: none;
+  }
+  .pagination__inside__links > :nth-child(5) {
+    display: none;
+  }
+}
+@media (max-width: 31.25em) {
+  .pagination__inside__next_last {
+    display: none;
+  }
+  .pagination__inside__links > a {
+    height: 32px;
+    width: 32px;
+  }
+}

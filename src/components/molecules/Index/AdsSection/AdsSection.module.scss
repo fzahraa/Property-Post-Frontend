@@ -1,0 +1,49 @@
+@import "/src/assets/styles//global.scss";
+.ads-section {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1440px;
+  background-image: url("/images/ads-section.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 450px;
+  margin-top: 80px;
+  padding: 40px;
+  &_inside {
+    p {
+      @include MontserratRegular;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 29px;
+      color: $color-black;
+      margin-bottom: 24px;
+    }
+    h1 {
+      max-width: 760px;
+      @include MontserratRegular;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 48px;
+      line-height: 56px;
+      color: $color-black;
+    }
+    &_button {
+      max-width: 220px;
+      margin-top: 60px;
+    }
+  }
+}
+@media (max-width: 31.25em) {
+  .ads-section {
+    padding: 20px;
+    &_inside {
+      h1 {
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 48px;
+      }
+    }
+  }
+}

@@ -1,0 +1,121 @@
+@import "/src/assets/styles/global.scss";
+.header {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1440px;
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+  &_inside {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 40px 12px 24px;
+    span {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+    }
+    &_right {
+      &_container {
+        display: flex;
+        align-items: center;
+        gap: 32px;
+        span {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding: 14px;
+          border-radius: 50%;
+          border: 1px solid $color-primary;
+        }
+        &_btn {
+          border: 1px solid $color-primary;
+          border-radius: 8px;
+          padding: 4px 16px;
+          display: flex;
+          align-items: center;
+          gap: 8px;
+          cursor: pointer;
+          p {
+            @include MontserratRegular;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 20px;
+            display: flex;
+            align-items: center;
+            color: $color-black-4;
+          }
+        }
+      }
+    }
+  }
+}
+.profile-image {
+  height: 40px !important;
+  width: 40px !important;
+}
+.profile-setting {
+  position: relative;
+}
+@media (max-width: 51.25em) {
+  .header {
+    &_inside {
+      padding: 15px 20px 12px 0px;
+      &_right {
+        &_container {
+          gap: 12px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 45.62em) {
+  .header {
+    &_inside {
+      &_right {
+        &_container {
+          span {
+            display: none;
+          }
+          &_button {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 31.25em) {
+  .header {
+    &_inside {
+      padding: 15px 10px 12px 0px;
+
+      &_right {
+        &_container {
+          span {
+            display: none;
+          }
+          &_button {
+            display: none;
+          }
+          &_btn {
+            border: 1px solid $color-primary;
+            border-radius: 50%;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            cursor: pointer;
+            p {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
+  .profile-image {
+    border-radius: 50%;
+  }
+}

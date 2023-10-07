@@ -1,0 +1,77 @@
+@import "/src/assets/styles/global.scss";
+.otp-verification {
+  &_container {
+    margin: 0 auto;
+    width: 100%;
+    margin-top: 50px;
+    max-width: 400px;
+    margin-bottom: 10px;
+
+    h1 {
+      @include MontserratRegular;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 32px;
+      line-height: 100%;
+      letter-spacing: 0.005em;
+      color: $color-primary;
+      margin-bottom: 80px;
+      text-align: center;
+    }
+    &_input {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+
+      margin-bottom: 32px;
+      label {
+        @include MontserratRegular;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 120%;
+        letter-spacing: 0.005em;
+        color: $color-primary;
+      }
+    }
+  }
+}
+@media (max-width: 28em) {
+  .otp-verification_container {
+    h1 {
+      font-size: 24px;
+      line-height: 28px;
+    }
+  }
+  .otp-verification_container_input {
+    label {
+      font-size: 14px;
+    }
+  }
+}
+
+.auth-form {
+  box-sizing: border-box;
+  @include wh($height: 44px);
+  padding: 10px 14px;
+  box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+  border-radius: 8px;
+  font-size: 15px;
+  letter-spacing: 0;
+  line-height: 24px;
+  outline: none;
+  @include px($left: 8px, $right: 8px);
+  border: 1px solid $color-black-2;
+  background: $color-white;
+  @include MontserratRegular;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 120%;
+  letter-spacing: 0.005em;
+
+  color: $color-black;
+  &::placeholder {
+    color: rgba(0, 0, 0, 0.6);
+  }
+}

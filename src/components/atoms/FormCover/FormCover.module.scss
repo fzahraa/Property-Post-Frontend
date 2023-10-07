@@ -1,0 +1,15 @@
+@import "/src/assets/styles/global.scss";
+.form-cover {
+  background: $color-white;
+  box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+  padding: 40px;
+}
+@media (max-width: 28.5em) {
+  .form-cover {
+    background: $color-white;
+    box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    padding: 20px 10px;
+  }
+}

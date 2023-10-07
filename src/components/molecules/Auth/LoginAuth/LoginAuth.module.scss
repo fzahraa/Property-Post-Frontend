@@ -1,0 +1,133 @@
+@import "/src/assets/styles/global.scss";
+.sign-in {
+  &_container {
+    margin: 0 auto;
+    width: 100%;
+    margin-top: 50px;
+    max-width: 400px;
+    margin-bottom: 10px;
+
+    h1 {
+      @include MontserratRegular;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 32px;
+      line-height: 100%;
+      letter-spacing: 0.005em;
+      color: $color-primary;
+      margin-bottom: 32px;
+      text-align: center;
+    }
+    &_input {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      margin-bottom: 16px;
+      label {
+        @include MontserratRegular;
+
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 120%;
+        color: $color-black;
+      }
+    }
+    &_forgot-password {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      p {
+        @include MontserratRegular;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 120%;
+        letter-spacing: 0.005em;
+        color: $color-black;
+        cursor: pointer;
+      }
+    }
+    &_button {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      margin-top: 60px;
+      span {
+        @include MontserratRegular;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 120%;
+        text-align: center;
+
+        color: $color-black;
+      }
+    }
+  }
+  &_footer {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 16px;
+    justify-content: center;
+    p {
+      @include MontserratRegular;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 120%;
+      letter-spacing: 0.005em;
+      color: $color-black;
+    }
+    span {
+      @include MontserratRegular;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 120%;
+      letter-spacing: 0.005em;
+      text-decoration-line: underline;
+      cursor: pointer;
+      color: #c5202f;
+    }
+  }
+}
+@media (max-width: 28em) {
+  .sign-in_container {
+    h1 {
+      font-size: 24px;
+      line-height: 28px;
+    }
+  }
+  .sign-in_container_input {
+    label {
+      font-size: 14px;
+    }
+  }
+}
+.auth-form {
+  box-sizing: border-box;
+  @include wh($height: 44px);
+  padding: 10px 14px;
+  box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+  border-radius: 8px;
+  font-size: 15px;
+  letter-spacing: 0;
+  line-height: 24px;
+  outline: none;
+  @include px($left: 8px, $right: 8px);
+  border: 1px solid $color-black-2;
+  background: $color-white;
+  @include MontserratRegular;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 120%;
+  letter-spacing: 0.005em;
+
+  color: $color-black;
+  &::placeholder {
+    color: rgba(0, 0, 0, 0.6);
+  }
+}

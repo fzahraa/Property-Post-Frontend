@@ -1,0 +1,90 @@
+@import "/src/assets/styles//global.scss";
+.contact-us {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1440px;
+  margin-top: 80px;
+  padding: 0 40px;
+  h1 {
+    @include MontserratRegular;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 40px;
+    color: $color-black-6;
+    text-align: center;
+    margin-bottom: 60px;
+  }
+  &_container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    gap: 16px;
+    &_left {
+      width: 100%;
+      max-width: 628px;
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+      &_button {
+        width: 100%;
+        max-width: 628px;
+      }
+    }
+    &_right {
+      width: 100%;
+      max-width: 652px;
+    }
+  }
+}
+.contact-form-textarea {
+  resize: none;
+  box-sizing: border-box;
+  padding: 10px 14px;
+  border: 1px solid $color-gray-2;
+  box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+  border-radius: 8px;
+  @include backgroundColor($color-white);
+  @include MontserratRegular;
+
+  outline: none;
+  @include px($left: 8px, $right: 8px);
+
+  width: 100%;
+  max-width: 628px;
+  border: 1px solid $color-primary;
+  color: $color-gray-4;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+@media (max-width: 50em) {
+  .contact-us {
+    padding: 0 20px;
+
+    &_container {
+      display: grid;
+      grid-template-columns: 1fr;
+      align-items: center;
+      width: 100%;
+      gap: 16px;
+      &_left {
+        width: 100%;
+        max-width: 100%;
+        &_button {
+          max-width: 100%;
+        }
+      }
+      &_right {
+        grid-row: 1;
+        width: 100%;
+        max-width: 100%;
+      }
+    }
+  }
+  .contact-form-textarea {
+    max-width: 100%;
+  }
+}

@@ -1,0 +1,78 @@
+@mixin fontSize($size: 16px) {
+  font-size: $size;
+}
+@mixin mx($left: inherit, $right: inherit) {
+  margin-left: $left;
+  margin-right: $right;
+}
+
+@mixin my($top: inherit, $bottom: inherit) {
+  margin-top: $top;
+  margin-bottom: $bottom;
+}
+@mixin px($left: inherit, $right: inherit) {
+  padding-left: $left;
+  padding-right: $right;
+}
+@mixin py($top: inherit, $bottom: inherit) {
+  padding-top: $top;
+  padding-bottom: $bottom;
+}
+
+@mixin color($color: #fff) {
+  color: $color;
+}
+@mixin backgroundColor($color: #fff) {
+  background-color: $color;
+}
+
+@mixin border($width: 0px, $color: transparent) {
+  border: $width solid $color;
+}
+
+@mixin radius($radius: 0px) {
+  border-radius: $radius;
+}
+@mixin wh($width: inherit, $height: inherit) {
+  width: $width;
+  height: $height;
+}
+@mixin center() {
+  text-align: center;
+}
+@mixin right() {
+  text-align: right;
+}
+@mixin left() {
+  text-align: left;
+}
+@mixin justify() {
+  text-align: justify;
+}
+
+@mixin boxShadow($shadow) {
+  box-shadow: $shadow;
+}
+
+@mixin flexRow() {
+  display: flex;
+}
+@mixin flexColumn() {
+  @include flexRow();
+  flex-direction: column;
+}
+@mixin flexColumnCenter() {
+  @include flexColumn();
+  justify-content: center;
+  align-items: center;
+}
+@mixin flexRowCenter() {
+  @include flexRow();
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin flexColumnAlignItem($align) {
+  @include flexColumn();
+  align-items: $align;
+}

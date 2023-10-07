@@ -1,0 +1,187 @@
+@import "/src/assets/styles/global.scss";
+.buisness-payment {
+  background: $color-white;
+  box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+  &_heading {
+    padding: 16px 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+
+    h1 {
+      @include MontserratRegular;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 26px;
+      line-height: 30px;
+      color: $color-black;
+    }
+    &_fillter {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: fit-content;
+      gap: 12px;
+      h4 {
+        @include MontserratRegular;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 20px;
+        color: $color-black;
+      }
+    }
+  }
+  &_table {
+    width: 100%;
+    &_heading {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 24px;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.23);
+      p {
+        @include MontserratRegular;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 20px;
+
+        color: $color-black;
+      }
+      &_type {
+        width: 100%;
+        max-width: 200px;
+        text-align: left;
+      }
+      &_number {
+        width: 100%;
+        max-width: 220px;
+      }
+      &_company {
+        width: 100%;
+        max-width: 150px;
+      }
+      &_payment {
+        width: 100%;
+        max-width: 150px;
+      }
+
+      &_action {
+        max-width: 100px;
+
+        width: 100%;
+      }
+    }
+    &_detail {
+      display: flex;
+      align-items: center;
+
+      justify-content: space-between;
+      padding: 22px 24px;
+      border-bottom: 1px solid #e2e2ee;
+      span {
+        @include MontserratRegular;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 23px;
+        color: rgba(0, 0, 0, 0.6);
+      }
+      &_type {
+        width: 100%;
+        text-align: left;
+        max-width: 200px;
+      }
+
+      &_number {
+        width: 100%;
+        max-width: 220px;
+      }
+
+      &_company {
+        width: 100%;
+        max-width: 150px;
+      }
+
+      &_date {
+        width: 100%;
+        max-width: 150px;
+      }
+      &_action {
+        width: 100%;
+        max-width: 100px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 16px;
+        span {
+          cursor: pointer;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+      }
+    }
+  }
+}
+.status-detail-Posted {
+  color: #28b446;
+}
+.status-detail-Pending {
+  color: #f8c34a;
+}
+.status-detail-Cancel {
+  color: #464ce3;
+}
+
+.dropdown-v2 {
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  border-radius: 10px;
+  padding: 5px 10px 5px 24px;
+  display: flex;
+  gap: 18px;
+  padding-right: 16px;
+  width: 110px;
+  border-radius: 8px;
+  @include color($color-black);
+  @include MontserratRegular;
+
+  font-size: 15px;
+  letter-spacing: 0;
+  line-height: 24px;
+  outline: none;
+
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+  p {
+    @include MontserratRegular;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+
+    color: $color-black-4;
+  }
+}
+@media (max-width: 73.5em) {
+  .buisness-payment {
+    box-sizing: border-box;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    width: 100%;
+  }
+  .buisness-payment_heading {
+    width: 850px;
+  }
+  .buisness-payment_table {
+    width: 850px;
+  }
+}

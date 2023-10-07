@@ -1,0 +1,368 @@
+@import "/src/assets/styles/global.scss";
+.edit-post {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  &_left {
+    background: $color-white;
+    box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    padding: 24px 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    &_heading {
+      h1 {
+        @include MontserratRegular;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 30px;
+        color: $color-black;
+      }
+    }
+  }
+  &_right {
+    background: $color-white;
+    box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    padding: 10px 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+}
+.form-input {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  label {
+    @include MontserratRegular;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    color: $color-black;
+  }
+}
+.form-input-checkbox-container {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.from-checkbox {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+}
+
+.from-checkbox {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+}
+
+.dropdown-container {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.dropdown-v2 {
+  p {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+
+    span {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}
+.button {
+  margin: 0 auto;
+  max-width: 140px;
+  margin-top: 32px;
+}
+.dropdown {
+  width: 100%;
+  border: 1px solid #787878;
+  border-radius: 10px;
+  display: flex;
+  gap: 24px;
+  height: 48px;
+  padding-right: 16px;
+  border-radius: 8px;
+  @include backgroundColor($color-white);
+  @include color($color-black);
+  @include MontserratRegular;
+
+  font-size: 15px;
+  letter-spacing: 0;
+  line-height: 24px;
+  outline: none;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  position: relative;
+  p {
+    @include MontserratRegular;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    padding-left: 14px;
+    color: $color-black-4;
+  }
+}
+.form-input_inside {
+  border: 1px solid #787878;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+}
+.dropdown-v2 {
+  width: 100%;
+  position: relative;
+
+  max-width: 140px;
+  border-radius: 10px;
+  display: flex;
+  gap: 24px;
+  height: 48px;
+  padding-right: 16px;
+  border-radius: 8px;
+  @include backgroundColor($color-white);
+  @include color($color-black);
+  @include MontserratRegular;
+
+  font-size: 15px;
+  letter-spacing: 0;
+  line-height: 24px;
+  outline: none;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  p {
+    @include MontserratRegular;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+
+    color: $color-black-4;
+  }
+}
+.form-input-checkbox {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  label {
+    @include MontserratRegular;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    color: $color-black;
+  }
+  &_inside {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 20px;
+    column-gap: 20px;
+  }
+}
+.form-input {
+  textarea {
+    box-sizing: border-box;
+    padding: 10px 14px;
+    border: 1px solid $color-gray-2;
+    box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+    border-radius: 8px;
+    @include backgroundColor($color-white);
+    @include color($color-black-4);
+    @include MontserratRegular;
+
+    font-size: 15px;
+    letter-spacing: 0;
+    line-height: 24px;
+    outline: none;
+    @include px($left: 8px, $right: 8px);
+    resize: none;
+  }
+}
+.form-input {
+  &_upload-file {
+    box-sizing: border-box;
+    height: 140px;
+
+    padding: 10px 14px;
+    border: 1px solid $color-gray-2;
+    box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+    border-radius: 8px;
+    @include backgroundColor($color-white);
+    @include color($color-black-4);
+    @include MontserratRegular;
+
+    font-size: 15px;
+    letter-spacing: 0;
+    line-height: 24px;
+    outline: none;
+    @include px($left: 8px, $right: 8px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    // position: relative;
+    gap: 10px;
+  }
+}
+.edit-icon {
+  padding: 11px 12px;
+  width: 180px;
+  border: 1px solid $color-primary;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  right: 0px;
+  background: $color-white;
+  z-index: 10;
+  cursor: pointer;
+
+  &_inside {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    p {
+      @include LatoRegular;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 20px;
+      color: $color-primary;
+    }
+    span {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}
+
+.input-file {
+  height: 47px;
+  width: 180px;
+  opacity: 0;
+  position: absolute;
+  z-index: 1;
+  cursor: pointer;
+}
+.post-add-input-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.new-property {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  .edit-post_left {
+    box-shadow: none;
+    gap: 40px;
+    padding: 0;
+  }
+  .edit-post_right {
+    box-shadow: none;
+    gap: 20px;
+  }
+  .form-input_upload-file {
+    height: 156px;
+  }
+}
+.new-property-heading {
+  box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.25);
+  background: $color-white;
+  &_inside {
+    padding: 24px 32px;
+  }
+  h1 {
+    @include MontserratRegular;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 30px;
+    color: $color-black;
+  }
+}
+
+@media (max-width: 82em) {
+  .new-property-heading_inside {
+    padding: 24px 16px;
+  }
+  .edit-post {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    &_left {
+      padding: 16px 16px;
+      gap: 30px;
+    }
+    &_right {
+      padding: 10px 16px;
+      gap: 32px;
+    }
+    .edit-post_right {
+      // gap: 2px;
+      gap: 18px;
+    }
+  }
+}
+
+@media (max-width: 78.62em) {
+  .edit-post {
+    gap: 0;
+  }
+  .new-property {
+    gap: 0;
+  }
+  .edit-post_left {
+    padding: 0 12px;
+  }
+
+  .edit-post_right {
+    padding: 0 12px;
+  }
+}
+@media (max-width: 78.62em) {
+  .new-property {
+    gap: 16px;
+    grid-template-columns: 1fr;
+    padding: 24px 32px;
+  }
+}
+@media (max-width: 54.12em) {
+  .new-property {
+    padding: 24px 0px;
+  }
+}
+@media (max-width: 28em) {
+  .new-property-heading_inside {
+    padding: 24px 0;
+  }
+  .new-property {
+    padding: 24px 0;
+  }
+  .edit-post_right {
+    padding: 0;
+  }
+  .post-add-input-grid {
+    grid-template-columns: 1fr;
+  }
+}

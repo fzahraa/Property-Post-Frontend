@@ -1,0 +1,165 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.swiper-pagination-bullet {
+  width: 15px !important;
+  height: 15px !important;
+}
+.swiper-pagination-bullet-active {
+  background: #c5202f !important;
+  height: 15px !important;
+  width: 27px !important;
+  border-radius: 18px !important;
+}
+.swiper-pagination {
+  position: relative !important;
+  margin-top: 40px !important;
+}
+.Slider-inside .swiper-pagination {
+  margin-top: -30px !important;
+}
+.Slider-inside .swiper-pagination-bullet {
+  background: #e3e3e3 !important;
+  opacity: 1;
+}
+.Slider-inside .swiper-pagination-bullet-active {
+  background: #c5202f !important;
+  height: 15px !important;
+  width: 27px !important;
+  border-radius: 18px !important;
+}
+.swiper-button-prev {
+  top: var(--swiper-navigation-top-offset, 50%) !important;
+  left: var(--swiper-navigation-sides-offset, 30px) !important;
+  --swiper-navigation-size: 10px !important;
+  padding: 14px;
+  background: #c5202f;
+  color: white !important;
+  border-radius: 50%;
+}
+.swiper-button-next {
+  top: var(--swiper-navigation-top-offset, 60%) !important;
+  right: var(--swiper-navigation-sides-offset, 30px) !important;
+  --swiper-navigation-size: 10px !important;
+  padding: 14px;
+  background: #c5202f;
+  color: white !important;
+  border-radius: 50%;
+}
+.swiper,
+swiper-container {
+  padding-top: 30px !important;
+  padding-left: 10px !important;
+  padding-right: 10px !important;
+}
+.auth-slider-container .swiper,
+swiper-container {
+  padding-top: 0px !important;
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+}
+.sliderContainer {
+  position: relative !important;
+  z-index: 2 !important;
+}
+
+.swiper {
+  position: unset !important;
+}
+.css-1elwnq4-MuiPaper-root-MuiAccordion-root:first-of-type {
+  box-shadow: none !important;
+  border-bottom-left-radius: 0px !important;
+  border-bottom-right-radius: 0px !important;
+  border-bottom: 1px solid #787878 !important;
+}
+.css-1elwnq4-MuiPaper-root-MuiAccordion-root:last-of-type {
+  box-shadow: none !important;
+  border-bottom-left-radius: 0px !important;
+  border-bottom-right-radius: 0px !important;
+  border-bottom: 1px solid #787878 !important;
+}
+.css-1elwnq4-MuiPaper-root-MuiAccordion-root {
+  box-shadow: none !important;
+  border-bottom-left-radius: 0px !important;
+  border-bottom-right-radius: 0px !important;
+  border-bottom: 1px solid #787878 !important;
+}
+.css-ahj2mt-MuiTypography-root {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
+
+  color: #000000;
+}
+.MuiAccordionDetails-root p {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 23px;
+  /* or 144% */
+
+  color: #787878;
+}
+
+.MenuItem {
+  color: black;
+}
+
+.css-14pt78w-MuiSlider-rail {
+  color: #d9d9d9;
+}
+.css-1tfve6q-MuiSlider-mark {
+  display: none;
+}
+.css-6cwnna-MuiSlider-mark {
+  display: none;
+}
+.css-1eoe787-MuiSlider-markLabel {
+  position: relative !important;
+  top: 30px !important;
+  color: #000000 !important;
+}
+.mortgage_inside_left_inputs .css-yafthl-MuiSlider-markLabel {
+  position: relative !important;
+  top: 10px !important;
+  color: #000000 !important;
+  left: 80% !important;
+}
+.css-yafthl-MuiSlider-markLabel {
+  left: 96% !important;
+  top: 40px !important;
+  color: #000000 !important;
+}
+.DonutChart_o-donut-chart-container__rqYSQ .DonutChart_heading__Nm1zx span {
+  font-family: "Montserrat" !important;
+  font-style: normal !important;
+  font-weight: 500 !important;
+  font-size: 20px !important;
+  line-height: 24px !important;
+  text-align: center !important;
+
+  color: #787878 !important;
+}
+
+.list:hover .navbar-dropdown {
+  margin-top: 30px;
+}
+
+@media (max-width: 30em) {
+  .css-yafthl-MuiSlider-markLabel {
+    left: 90% !important;
+  }
+}
+
+.ChartBox_box-container__JfGtY .ChartBox_box-container__content__4bYgA {
+  min-height: fit-content !important;
+}
+body.modal-open {
+  overflow: hidden !important;
+}

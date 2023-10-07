@@ -1,0 +1,40 @@
+@import "/src/assets/styles/global.scss";
+.user-dashboard-age-split {
+  width: 100% !important;
+}
+.o-donut-chart-container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 99%;
+  margin: auto;
+  @include xs() {
+    width: 100%;
+  }
+  min-height: 300px;
+  background: $color-white;
+  border-radius: 10px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  box-sizing: border-box;
+  .heading {
+    text-align: center;
+    padding-top: 8px;
+    span {
+      font-family: "Helvetica Now Display";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 29px;
+      color: $color-black;
+      padding: 20px;
+      margin-top: 20px;
+    }
+  }
+}
+
+.conversion-rate-source-chart {
+  height: 290px !important;
+}
+.conversion-rate-chart {
+  width: 100% !important;
+}

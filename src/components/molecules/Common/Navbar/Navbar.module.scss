@@ -1,0 +1,210 @@
+@import "/src/assets/styles/global.scss";
+.navbar {
+  padding-top: 16px;
+  ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+    list-style: none;
+    margin-top: 15px;
+    li {
+      @include MontserratRegular;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 29px;
+      color: $color-black;
+      padding-bottom: 6px;
+      border-bottom: 5px solid transparent;
+      cursor: pointer;
+      z-index: 10;
+      &:hover {
+        border-bottom: 5px solid $color-primary;
+      }
+    }
+  }
+}
+
+.active {
+  @include MontserratRegular;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 29px;
+  color: $color-black;
+  padding-bottom: 6px;
+  border-bottom: 5px solid $color-primary !important;
+  cursor: pointer;
+}
+.active:hover + .navbar-dropdown {
+  display: block;
+}
+.mobile-dropdown {
+  display: none;
+}
+.list:hover + .navbar-dropdown {
+  display: block !important;
+  z-index: 100;
+}
+
+.navbar-dropdown {
+  margin: 0 auto !important;
+  position: absolute;
+  padding-bottom: 32px;
+  width: 100%;
+  max-width: 100%;
+
+  background: $color-white;
+  top: 75px;
+  left: 0;
+  right: 0;
+  display: none;
+  z-index: 100;
+  &:hover {
+    display: block;
+  }
+}
+
+.navbar-dropdown_inside {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  h3 {
+    @include InterRegular;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    color: $color-black;
+    margin-bottom: 32px;
+  }
+  &_left {
+    padding-left: 40px;
+    padding-top: 32px;
+  }
+  &_center {
+    padding-left: 40px;
+    padding-top: 32px;
+  }
+  &_right {
+    padding-left: 40px;
+    padding-top: 32px;
+  }
+}
+.navbar-dropdown_inside_list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px !important;
+  p {
+    @include InterRegular;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    cursor: pointer;
+    color: $color-black;
+    width: fit-content;
+    border-bottom: 3px solid transparent;
+    padding-bottom: 3px;
+    &:hover {
+      padding-bottom: 3px;
+
+      border-bottom: 3px solid $color-black;
+    }
+  }
+}
+@media (max-width: 60.25em) {
+  .navbar-container-after {
+    transform: translateX(0%);
+  }
+  .navbar-container-before {
+    transform: translateX(-100%);
+  }
+  .navbar {
+    background-color: $color-white;
+    width: 250px;
+    height: 100vh;
+    overflow-y: scroll;
+    transition: all 0.4s;
+    box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+    ul {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0px;
+      padding-top: 40px;
+      li {
+        padding: 16px 20px;
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 0px solid transparent !important;
+        border-top: 1px solid $color-black;
+      }
+      li:nth-child(1) {
+        border-bottom: 0;
+      }
+    }
+  }
+  .mobile-dropdown {
+    display: block;
+  }
+  .active:hover + .navbar-dropdown {
+    display: none !important;
+  }
+  .list:hover + .navbar-dropdown {
+    display: none !important;
+  }
+  .active {
+    border-bottom: 0px solid transparent !important;
+  }
+
+  .mobile-navbar-dropdown {
+    width: 100%;
+    max-width: 100%;
+    background: transparent;
+
+    .navbar-dropdown_inside {
+      display: grid;
+      grid-template-columns: 1fr;
+      h3 {
+        @include InterRegular;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 20px;
+        color: $color-black;
+      }
+      &_left {
+        padding: 16px 10px;
+      }
+      &_center {
+        padding: 16px 10px;
+      }
+      &_right {
+        padding: 16px 10px;
+      }
+    }
+    .navbar-dropdown_inside_list {
+      display: flex;
+      flex-direction: column;
+      gap: 20px !important;
+      p {
+        @include InterRegular;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16px;
+        cursor: pointer;
+        color: $color-black;
+        width: fit-content;
+        border-bottom: 3px solid transparent;
+        padding-bottom: 3px;
+        &:hover {
+          padding-bottom: 3px;
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}

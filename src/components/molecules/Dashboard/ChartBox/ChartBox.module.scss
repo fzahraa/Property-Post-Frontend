@@ -1,0 +1,153 @@
+@import "/src/assets/styles/global.scss";
+.box-container {
+  background-color: $color-white;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+  padding: 10px;
+  width: 100%;
+
+  &__middle {
+    padding-left: 15px;
+    padding-bottom: 10px;
+    .value {
+      font-family: "Helvetica Now Display";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 35px;
+      color: $color-blue;
+    }
+  }
+  .box-container__header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 15px;
+    padding-bottom: 0px !important;
+    align-items: center;
+    @include xs() {
+      flex-wrap: wrap;
+      justify-content: flex-start;
+    }
+
+    .box-container__labels {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      .item {
+        display: flex;
+        align-items: center;
+        flex-direction: row-reverse;
+        margin-right: 10px;
+        .label-title {
+          font-size: 12px;
+          margin-right: 5px;
+          font-family: "Helvetica Now Display";
+          font-style: normal;
+          font-weight: 400;
+          line-height: 21px;
+          color: $color-black;
+        }
+        .label-box {
+          width: 14px;
+          height: 12px;
+          border-radius: 3px;
+          margin-right: 7px;
+        }
+      }
+    }
+    .box-container__header-title {
+      span {
+        font-family: "Helvetica Now Display";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 29px;
+        color: $color-black;
+      }
+    }
+  }
+  .box-container__content {
+    min-height: 320px;
+    position: relative;
+    @include xs() {
+      min-height: fit-content !important;
+    }
+  }
+}
+
+.dashboard-influencer-chart {
+  min-height: 420px !important;
+  @include xs() {
+    min-height: fit-content !important;
+  }
+}
+
+.age-split--box {
+  height: 250px !important;
+  @include xs() {
+    min-height: fit-content !important;
+  }
+}
+.profile--tags {
+  min-height: auto !important;
+}
+
+.growth-chart-container-box {
+  min-height: 288px !important;
+  @include xs() {
+    min-height: 300px !important;
+  }
+}
+.user-dashboard-revenue-chart {
+  .box-container__header {
+    @include xs() {
+      flex-wrap: wrap;
+      justify-content: space-between !important;
+    }
+  }
+}
+
+.user-dashboard-top-countries {
+  .box-container__header {
+    @include xs() {
+      flex-wrap: wrap;
+      justify-content: space-between !important;
+    }
+  }
+}
+
+.user-dashboard-audience-age-split {
+  .box-container__header {
+    @include xs() {
+      .box-container__header-title {
+        span {
+          font-size: 15px;
+        }
+      }
+      flex-wrap: wrap;
+      justify-content: space-between !important;
+    }
+  }
+}
+
+.user-dashboard-growtch-chart {
+  .box-container__content {
+    @include xs() {
+      min-height: 300px !important;
+    }
+  }
+  .box-container__header {
+    @include xs() {
+      .box-container__header-title {
+        span {
+          font-size: 15px;
+        }
+      }
+      flex-wrap: wrap;
+      justify-content: space-between !important;
+    }
+  }
+}

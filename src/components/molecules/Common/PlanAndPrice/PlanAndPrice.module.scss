@@ -1,0 +1,57 @@
+@import "/src/assets/styles/global.scss";
+.business-plan {
+  background: $color-white;
+  box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+  padding: 40px 40px 32px 32px;
+  &_heading {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    h1 {
+      @include MontserratRegular;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 30px;
+      line-height: 32px;
+      color: $color-black;
+    }
+
+    h3 {
+      @include MontserratRegular;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 24px;
+      line-height: 29px;
+      color: $color-black;
+    }
+  }
+  &_inside {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+  }
+}
+@media (max-width: 80em) {
+  .business-plan {
+    padding: 32px 40px 40px 24px;
+  }
+  .business-plan_inside {
+    gap: 16px;
+  }
+}
+.business-plan-v2 {
+  box-shadow: none;
+  padding: 0;
+}
+@media (max-width: 76.5em) {
+  .business-plan_inside {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 58.75em) {
+  .business-plan_inside {
+    grid-template-columns: 1fr;
+  }
+}

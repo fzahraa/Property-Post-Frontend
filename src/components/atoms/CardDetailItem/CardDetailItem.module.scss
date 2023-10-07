@@ -1,0 +1,70 @@
+@import "/src/assets/styles/global.scss";
+
+.card-container {
+  border: 1px solid $color-black;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 540px;
+  padding: 16px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+  &_header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    h3 {
+      @include MontserratRegular;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 24px;
+      color: $color-black;
+    }
+  }
+  &_footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &_inside {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      span {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      p {
+        @include MontserratRegular;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 20px;
+        color: $color-black;
+      }
+    }
+    span {
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}
+.active-card {
+  @extend .card-container;
+  border: none;
+  border: 1px solid transparent;
+  background: $color-primary !important;
+  .card-container_header {
+    h3 {
+      color: $color-white;
+    }
+  }
+  .card-container_footer_inside {
+    p {
+      color: $color-white;
+    }
+  }
+}
